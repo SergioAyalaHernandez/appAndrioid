@@ -1,0 +1,66 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:animationCache="true"
+    android:background="#F44336"
+    android:backgroundTintMode="src_over">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="405dp"
+        android:layout_height="272dp"
+        android:src="@drawable/img_2"
+        app:layout_constraintBottom_toTopOf="@+id/helloTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/helloTextView"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="375dp"
+        android:layout_height="163dp"
+        android:layout_marginEnd="32dp"
+        android:rotationX="-2"
+        android:rotationY="4"
+        android:text="Luffy en g5 vista 4"
+        android:textAlignment="center"
+        android:textColor="#F4F1F1"
+        android:textColorHighlight="#FBFBFB"
+        android:textColorHint="#F3EFEF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView"
+        app:layout_constraintVertical_bias="0.305"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="93dp"
+        android:layout_height="64dp"
+        android:text="Atrás"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/forwardButton"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:text="Adelante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
